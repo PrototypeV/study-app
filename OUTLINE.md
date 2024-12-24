@@ -7,5 +7,9 @@
 5. Reference + Notes Page
 
 ##Tasks
-- [] Study/Focus timer
-- [] 
+[] Study/Focus timer
+    -User is able to set Study Time 
+    -User is able to set Break Time
+    -User is able to set alarm sound
+[] Flashcards
+[] Calender
