@@ -1,19 +1,20 @@
-import Badge from 'react-bootstrap/Badge';
-import Button from 'react-bootstrap/Button';
+import { useState } from "react";
+import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Navbar(){
+
+    const [textInput, setTextInput] = useState('Enter Text Here!');
     return (
-    <div>
+    <div className='TTSPage'>
+      <h2> Text to Brainrot: </h2>
         <form>
           <label>Enter Text here:</label>   
+          <input type='text' value={textInput} onChange={(e) => setTextInput} required/>
+          <label>Example Text Area</label>
+          <textarea required/>
+          <button>Brainrot My Lecture!</button>
         </form>
-        <input type="text" required/>
-        <h5>
-          <Badge bg="secondary" as={Button}>
-            Brainrot My Lecture!
-          </Badge>
-        </h5>
     </div>
     );
 }

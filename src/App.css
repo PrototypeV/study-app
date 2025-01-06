@@ -7,15 +7,6 @@ body {
     padding: 15px;
 }
 
-.input{
-    width: 100%;
-    padding: 6px 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-    display: block;
-}
-
 .navtitle{
     float: right;
     margin-right: 15px;
@@ -24,4 +15,41 @@ body {
 table {
     width: 100%;
     border-bottom-style: solid;
+}
+
+/* TTS Page CSS - mostly playing with diffrent elements for now, lemme know what you like :D */
+/* I made a div class in TTSPage.tsx called TTS Page, and in defining this class with the element, I can specify elements to be different*/
+.TTSPage {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.TTSPage label{
+    text-align: left;
+    display: block;
+}
+
+.TTSPage h2{
+    font-size: 20px;
+    color: #f1356d;
+    display: block;
+}
+
+.TTSPage input, .TTSPage textarea {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+}
+
+.TTSPage button{
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
 }

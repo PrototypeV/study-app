@@ -5,7 +5,6 @@ import '../App.css'
 function Tts() {
   return <>
     <div><Navbar/></div>
-    <div>Text to Speech</div>
     <div><TtsPage/></div>
   </>
 }
