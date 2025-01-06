@@ -7,6 +7,15 @@ body {
     padding: 15px;
 }
 
+.input{
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+}
+
 .navtitle{
     float: right;
     margin-right: 15px;

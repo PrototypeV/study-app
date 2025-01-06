@@ -5,7 +5,7 @@ import Flashcards from './pages/Flashcards'
 import Focus from './pages/Focus'
 import Notes from './pages/Notes'
 import Tts from './pages/Tts'
-import '../App.css'
+import './App.css'
 
 function App() {
   return <>
