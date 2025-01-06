@@ -1,22 +1,30 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Timer() {
-    const [session, setSession] = useState();
+    const [session, setSession] = useState(0);
 
     function sessionTime(value: any){
-        setSession(value);
+        const time = parseInt(value, 10)*60;
+        setSession(time);
     }
 
+    /*
+    useEffect(() => {
+        setTimeout(() => {
+          setTime((time) => time - 1);
+        }, 1000);
+      });
+    */
   return (
     <>
         <p>Time Remaining: {session}</p>
         <p>Session Time:</p>
         <Form.Select aria-label="Default select example" onChange={e=>sessionTime(e.target.value)}>
-            <option value="1">10 mins</option>
-            <option value="2">20 mins</option>
-            <option value="3">30 mins</option>
+            <option value="10">10 mins</option>
+            <option value="20">20 mins</option>
+            <option value="30">30 mins</option>
         </Form.Select>
         <p>Break Time:</p>
         <Form.Select aria-label="Default select example">
