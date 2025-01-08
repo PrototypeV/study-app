@@ -19,6 +19,8 @@ table {
 
 /* TTS Page CSS - mostly playing with diffrent elements for now, lemme know what you like :D */
 /* I made a div class in TTSPage.tsx called TTS Page, and in defining this class with the element, I can specify elements to be different*/
+
+
 .TTSPage {
     max-width: 400px;
     margin: 0 auto;
@@ -28,6 +30,7 @@ table {
 .TTSPage label{
     text-align: left;
     display: block;
+    color: #ddd;
 }
 
 .TTSPage h2{

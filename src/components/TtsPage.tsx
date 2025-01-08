@@ -2,18 +2,23 @@ import { useState } from "react";
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 function Navbar(){
 
-    const [textInput, setTextInput] = useState('Enter Text Here!');
+    const [textInput, setTextInput] = useState('The helicopter goes fwoosh fwoosh fwoosh fwoosh fwoosh');
+
+    const speak = () => {
+      const utterance = new SpeechSynthesisUtterance(textInput);
+      speechSynthesis.speak(utterance);
+    };
+
+
     return (
     <div className='TTSPage'>
       <h2> Text to Brainrot: </h2>
         <form>
-          <label>Enter Text here:</label>   
-          <input type='text' value={textInput} onChange={(e) => setTextInput} required/>
-          <label>Example Text Area</label>
-          <textarea required/>
-          <button>Brainrot My Lecture!</button>
+          <textarea value={textInput} onChange={(e) => setTextInput} required/>
+          <button onClick={speak}>Brainrot My Lecture!</button>
         </form>
     </div>
     );

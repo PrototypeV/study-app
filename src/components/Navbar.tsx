@@ -10,7 +10,7 @@ function Navbar(){
         <table>
             <th className="navContainer">
                 <Stack direction="horizontal" gap={3}>
-                    <Button variant="outline-secondary" className="navbutton" onClick={()=>navigate("/Calender")}>Calender</Button>
+                    <Button variant="outline-secondary" className="navbutton" onClick={()=>navigate("/Calender")}>Calendar</Button>
                     <Button variant="outline-secondary" className="navbutton" onClick={()=>navigate("/Flashcards")}>Flashcards</Button>
                     <Button variant="outline-secondary" className="navbutton" onClick={()=>navigate("/Focus")}>Focus Session</Button>
                     <Button variant="outline-secondary" className="navbutton" onClick={()=>navigate("/Notes")}>Notes</Button>
